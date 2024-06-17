@@ -1,0 +1,14 @@
+<input [(ngModel)]="username">
+<button (click)="onClick()">Search</button>
+<table>
+    <tr>
+      <th>User Id</th>
+      <th>Username</th>
+      <th>Profile URL Link</th>
+    </tr>
+    <tr  *ngFor="let item of data">
+      <td>{{item.id}}</td>
+      <td>{{item.login}}</td>
+      <td>{{item.url}}</td>
+    </tr>
+  </table>
